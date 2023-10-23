@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Nunito+Sans:wght@200;700&family=Poppins:wght@400;500&family=Roboto+Condensed:wght@700&display=swap');
+
+:root {
+    --main-color: #2f2721;
+    --primary-color: #d3ad7f;
+    --black: #13131a;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62. 5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+
+}
+
+section {
+    padding: 2rem 7%;
+
+}
+
+
+.heading {
+    /* text-align: center; */
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    position: absolute;
+    bottom: -30%;
+    left: 40%;
+    /* top: 10%; */
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: 0.1rem solid var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* ----header---- */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.header .logo {
+    color: #fff;
+}
+
+.header .navbar {
+    position: relative;
+}
+
+.header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display: none;
+}
+
+.header .navbar a {
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+
+.header .navbar a:hover {
+    color: var(--primary-color);
+}
+
+.header .icons div {
+    margin-left: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.5rem;
+
+}
+
+.header .icons div:hover {
+    color: var(--primary-color);
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+body {
+    background-image: url(coffee.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* position: relative; */
+}
+
+.content h1 {
+    margin: 15px;
+    padding: 0%;
+    font-size: xxx-large;
+
+}
+
+.content h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: xxx-large;
+
+}
+
+.btn {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    color: #fff;
+    background-color: #d3ad7f;
+}
+
+/* .home {
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(coffee.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+
+} */
+
+/* --------about-------- */
+
+.about {
+    padding-top: 900px;
+    padding-bottom: 50px;
+    background-image: url(../image/about-bg.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/* 
+ */
+
+.about .row .image img {
+    width: 50%;
+
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding-left: 55%;
+    padding-bottom: 50px;
+
+
+
+
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #444;
+    padding: 1rem 0;
+    line-height: 1.8;
+}

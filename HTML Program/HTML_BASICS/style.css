@@ -1,0 +1,40 @@
+.first {
+    width: 400px;
+    height: 80px;
+    padding: 50px;
+    background-color: teal;
+outline: tomato;
+outline-style: solid;
+}
+.second{
+    background-color: tomato;
+    /* display: inline; */
+    width: 500px;
+    padding: 90px;
+    margin: 10px;
+    border:10px solid rgb(116, 116, 213);
+    outline-style:solid;
+    outline-offset: 15px;}
+    .demo {
+        margin-left:auto;
+        padding-top: 2
+        px;
+    }
+    h2 {
+        padding-top: 100px;
+        margin-top: 20px;
+        color: blueviolet;
+    }
+    .third {
+        background-color: bisque;
+        
+        
+        padding:10px;
+
+        
+        
+    }
+    #inline1{
+        display: inline;
+        color: red;
+    }

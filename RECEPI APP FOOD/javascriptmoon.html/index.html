@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Moon and Sun with Background Color Change</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f0f0f0;
+        }
+
+        #toggleImage {
+            cursor: pointer;
+            width: 200px;
+        }
+
+        #toggleButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Click the button to toggle between Moon and Sun</h2>
+    <img id="toggleImage" src="moon.jpg" alt="Moon">
+
+    <button id="toggleButton" onclick="toggleImage()">Toggle Image</button>
+
+    <script>
+        function toggleImage() {
+            const image = document.getElementById('toggleImage');
+            const button = document.getElementById('toggleButton');
+            const body = document.body;
+
+            if (image.src.match('moon.jpg')) {
+                image.src = 'sun.jpg';
+                image.alt = 'Sun';
+                button.innerText = 'Show Moon'; // Change the button text
+                body.style.backgroundColor = '#ffcc00'; // Change background color to yellow
+            } else {
+                image.src = 'moon.jpg';
+                image.alt = 'Moon';
+                button.innerText = 'Show Sun'; // Change the button text
+                body.style.backgroundColor = '#f0f0f0'; // Change background color back to light gray
+            }
+        }
+
+
+
+</script>
+</body>
+</html>

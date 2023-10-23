@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bgcolor {
+
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body id="demo">
+    <button onclick="add()" id="add">Add </button>
+    <button onclick="remove()" id="remove">Remove</button>
+
+
+    
+</body>
+
+<script>
+
+    function add() {
+        //  document.getElementById('demo').style.backgroundColor = "red";
+        document.getElementById('demo').setAttribute('class', 'bgcolor');
+
+    }
+    function remove() {
+        //  document.getElementById('demo').style.backgroundColor = "white";
+
+        document.getElementById('demo').removeAttribute('class', 'bgcolor');
+
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</html>

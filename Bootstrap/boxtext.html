@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(132, 177, 177);
+        }
+
+        .box2 {
+            background-color: brown;
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            margin: 30px;
+
+        }
+
+        .box1 {
+            position: relative;
+            background-color: brown;
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            margin: 30px;
+        }
+
+        .btn1 {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .box2 {
+            position: relative;
+        }
+
+        .btn2 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .button {
+            position: relative;
+            padding: 10px;
+            margin: 10px;
+            width: 80px;
+        }
+
+        .button {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">Done</button>
+    <div class="container">
+        <div class="box1">
+            <button class="btn1">Click Here</button>
+        </div>
+        <div class="box2">
+            <button class="btn2">Click here</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
